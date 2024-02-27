@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar>
+      <app-header slot="start"></app-header>
+      <ion-title>Detalles del Pedido</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content *ngFor="let retiro of retiro">
+    <ion-card >
+      <ion-card-header>
+        <ion-card-title></ion-card-title>
+        <ion-card-subtitle><strong>Dirección retiro: {{retiro.direccion_tienda}},{{retiro.comuna_tienda}}</strong></ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        Cliente: {{retiro.nombre_tienda}}<br>
+        ID: {{retiro.uid}} <br>
+        Bultos: {{retiro.numero_bultos}}<br>
+        Hora retiro: {{horaCarga}} <br>
+        Estado: {{retiro.estado_pedido}}
+      </ion-card-content>
+      <ion-footer>
+        <ion-button fill="clear"  class="realizar-retiro-button" (click)="mostrarMensaje()" (click)="cambiarEstadoDelPedido()">Realizar Retiro</ion-button>
+      </ion-footer>
+    </ion-card>
+
+    <div class="button-container">
+      <ion-button (click)="abrirGoogleMaps(retiro.direccion_tienda,retiro.comuna_tienda)">Mapa</ion-button>
+    </div>
+  </ion-content>

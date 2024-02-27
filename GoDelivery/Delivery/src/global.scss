@@ -1,0 +1,105 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import '@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+
+p {
+  color: white;
+}
+.alert-radio-label{
+  color: rgb(255, 255, 255) !important;
+}
+/* Cambia el color de fondo de todas las pantallas en la aplicación */
+ion-content {
+    --ion-background-color: #272727; /* Cambia el color según tus preferencias */
+  }
+
+/* Cambia el color de fondo de todas las ion-card en la aplicación */
+ion-card {
+    --ion-background-color: #000000; /* Cambia el color según tus preferencias */
+    width: auto; /* Ajusta el ancho según tus preferencias */
+    height: auto; /* Ajusta el alto según tus preferencias */
+  }
+
+/* Cambia el color del texto en toda la ion-card */
+ion-card {
+  ion-card-title,
+  ion-card-subtitle,
+  ion-card-content {
+    color: #ffffff; /* Cambia el color según tus preferencias */
+  }
+}
+
+.volver-button {
+  color: #ffffff;  // Cambia el color del texto del botón
+  background-color: #ff6624;  // Cambia el color de fondo del botón
+  font-size: 16px;  // Cambia el tamaño de fuente del botón
+  border-radius: 10px;  // Agrega esquinas redondeadas al botón
+  padding: 10px 20px;  // Ajusta el espaciado interno del botón
+  width: 100%;  // Ajusta el ancho del botón
+}
+
+.abrir-button {
+  color: #fff;
+  background-color: #ff6624;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;  // Ajusta el ancho del botón
+}
+
+.realizar-retiro-button {
+  color: #fff;
+  background-color: #ff6624;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;  // Ajusta el ancho del botón
+}
+
+.toolbar-background{
+  background-color: #ff6624 !important;
+}
+
+ion-toolbar{
+  --background: #ff6624;
+}
+
+.labelyinput{
+  color: white !important;
+}
+
+ion-toolbar{
+  --color: white;
+}
+
+select-placeholder{
+  --color: #ff6624;
+  --placeholder-color: #ff6624 !important;
+}
+

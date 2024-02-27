@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <app-header slot="start"></app-header>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="formulario">
+    <ion-item>
+      <ion-label position="floating" class="colorletras">Nombre de usuario</ion-label>
+      <ion-input [(ngModel)]="newUser.username" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" class="colorletras">Contraseña</ion-label>
+      <ion-input [(ngModel)]="newUser.password" type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" class="colorletras">Confirmar Contraseña</ion-label>
+      <ion-input [(ngModel)]="confirmPassword" type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" class="colorletras">Correo electrónico</ion-label>
+      <ion-input [(ngModel)]="newUser.email" type="email"></ion-input>
+    </ion-item>
+    <ion-button expand="full" (click)="register()">Registrar</ion-button>
+  </div>  
+  <div class="mensajeError">
+    <ion-item *ngIf="mostrarMensajeError1">
+      <ion-label color="danger">{{mensaje_error1}}</ion-label>
+    </ion-item>
+    <ion-item *ngIf="mostrarMensajeError2">
+      <ion-label color="danger">{{mensaje_error2}}</ion-label>
+    </ion-item>
+    <ion-item *ngIf="mostrarMensajeError3">
+      <ion-label color="danger">{{mensaje_error3}}</ion-label>
+    </ion-item>
+  </div>  
+</ion-content>

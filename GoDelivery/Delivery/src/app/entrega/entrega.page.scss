@@ -1,0 +1,30 @@
+.cuadro {
+  background-color: #000000; /* Color de fondo del cuadro */
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 20px; /* Borde blanco en los lados izquierdo y superior */
+
+}
+
+.retirado {
+  border-right: 30px solid #ff6624; /* Establece el color de borde para "No retirado" */
+}
+
+.entregado {
+  border-right: 30px solid green; /* Establece el color de borde para "Retirado" */
+}
+
+.ruta {
+  border-right: 30px solid red; /* Establece el color de borde para "Retirado" */
+}
+
+.entrega_parcial {
+  border-right: 30px solid rgb(235, 212, 5); /* Establece el color de borde para "Retirado" */
+}
+
+.card-content{
+    border: none;
+    box-shadow: none;
+    background-color: #000000; /* Color de fondo del cuadro */
+    color: white;
+}

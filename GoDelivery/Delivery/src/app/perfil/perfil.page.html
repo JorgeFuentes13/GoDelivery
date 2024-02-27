@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Perfil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="card">
+    <div class="image">
+      <ion-img src="assets/img/hombre.png"></ion-img>
+    </div>
+
+    <div class="card-content">
+      <ion-list>
+        <ion-item>
+          <ion-label>Nombre:  {{ newUser.username }} </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Email: {{ newUser.email }} </ion-label>
+        </ion-item>
+      </ion-list>
+
+      <div class="boton">
+        <ion-button class="present-alert" 
+                  (click) = "presentAlert()" (click)="salir()">Cerrar sesión</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true" >
+  <div class="image">
+    <ion-img src="assets/img/Sintítulo.png"></ion-img>
+  </div>
+  <div class="formulario">
+    <form [formGroup]="formularioLogin" (ngSubmit)="login()">
+      <div class="titulo-subtitulo">
+      <h2>Bienvenido</h2>
+      <p>Hola! Un gusto volver a verte.</p>
+      </div>
+      <ion-item>
+        <ion-label class="labelyinput" position="floating">Email</ion-label>
+        <ion-input class="labelyinput" formControlName="email" type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label class="labelyinput" position="floating">Contraseña</ion-label>
+        <ion-input class="labelyinput" formControlName="password" type="password"></ion-input>
+      </ion-item>
+      <ion-button size="large" expand="block" type="submit">
+        Ingresar
+      </ion-button>
+    </form>
+    <div class="registro">
+      <ion-label class="labelyinput">¿Olvidaste tu contraseña?</ion-label>
+      <ion-button fill="clear" [routerLink]="['/register']">Crear un usuario</ion-button>
+    </div>
+  </div>
+</ion-content>
+
+
+
